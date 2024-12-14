@@ -14,7 +14,7 @@ buildscript {
     }
 }
 
-rootProject.allprojects {
+rootPro`ect.allprojects {
     repositories {
         google()
         jcenter()
@@ -33,6 +33,10 @@ android {
     }
     defaultConfig {
         minSdkVersion 24
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 }
 
